@@ -17,14 +17,14 @@ const ProjectCard = ({ title, description, tags, github, preview, image }) => {
       {/* Content */}
       <div className="relative z-10">
         <motion.h3 
-          className="text-[#ccd6f6] text-xl font-semibold mb-2"
+          className="text-[#ccd6f6] text-xl font-semibold mb-2 flex items-center gap-2"
           layout
         >
           {title}
         </motion.h3>
         
         <motion.p 
-          className="text-[#8892b0] mb-4"
+          className="text-[#8892b0] mb-4 h-20"
           layout
         >
           {description}
@@ -48,21 +48,27 @@ const ProjectCard = ({ title, description, tags, github, preview, image }) => {
           {github && (
             <motion.a
               href={github}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="text-[#8892b0] hover:text-[#64ffda]"
+              className="flex items-center gap-2 text-[#8892b0] hover:text-[#64ffda] transition-colors duration-300"
             >
               <Github size={20} />
+              <span className="text-sm font-mono">Code</span>
             </motion.a>
           )}
           {preview && (
             <motion.a
               href={preview}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="text-[#8892b0] hover:text-[#64ffda]"
+              className="flex items-center gap-2 text-[#8892b0] hover:text-[#64ffda] transition-colors duration-300"
             >
               <ExternalLink size={20} />
+              <span className="text-sm font-mono">Live</span>
             </motion.a>
           )}
         </div>
