@@ -28,7 +28,7 @@ const Projects = () => {
       title: "Portfolio Website",
       description: "Modern, responsive portfolio built with React and Framer Motion animations.",
       tags: ["React", "Tailwind", "Framer Motion"],
-      github: "https://github.com/archebus/portfolio",
+      github: "https://github.com/archebus/portfolio-source",
     }
   ];
 

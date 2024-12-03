@@ -55,17 +55,19 @@ const Hero = () => {
           variants={item}
           className="max-w-lg text-[#8892b0] mb-8"
         >
-          I'm a software developer specializing in building exceptional digital experiences.
-          Currently, I'm focused on building accessible, human-centered products.
+          I'm a software developer passionate about understanding all facets of software engineering.
+          I am looking for projects that push me out of my comfort zone.
         </motion.p>
         <motion.div variants={item}>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded hover:bg-[rgba(100,255,218,0.1)] transition-colors font-mono"
-          >
-            Check out my work!
-          </motion.button>
+          <a href="#projects">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded hover:bg-[rgba(100,255,218,0.1)] transition-colors font-mono"
+            >
+              Check out my work!
+            </motion.button>
+          </a>
         </motion.div>
       </motion.div>
     </section>
